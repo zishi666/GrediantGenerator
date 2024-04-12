@@ -1,4 +1,4 @@
-import { inject } from "@vercel/analytics"
+import { inject } from "./node_modules/@vercel/analytics/dist/index.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
     const clrsInputs = document.querySelectorAll('input[type="color"]');
@@ -41,5 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
     copyBTn.addEventListener("click", gradientTextCopt);
 
     
-    inject();
+    // inject();
 });
