@@ -1,3 +1,4 @@
+import { inject } from "./node_modules/@vercel/analytics/dist/index.mjs";
 document.addEventListener('DOMContentLoaded', () => {
     const clrsInputs = document.querySelectorAll('input[type="color"]');
     const gradientScreen = document.querySelector('div.gradient-box'); 
@@ -37,4 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     refreshBTn.addEventListener("click", () => changeGradient(true));
     copyBTn.addEventListener("click", gradientTextCopt);
+
+    
+    inject();
 });
